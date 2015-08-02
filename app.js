@@ -29,6 +29,20 @@ server.route([
             'lastName': 'Saadeh'};
             reply(obj);
         }
+    },
+    {
+    method: 'GET',
+    path: '/error400',
+    handler: function (request, reply) {
+            reply(null).code(400);
+        }
+    },
+    {
+    method: 'GET',
+    path: '/error500',
+    handler: function (request, reply) {
+            reply(null).code(500);
+        }
     }
 ]);
 
