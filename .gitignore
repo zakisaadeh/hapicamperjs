@@ -1,5 +1,6 @@
 # Custom
 .settings/*
+*.sqlite3
 
 # Logs
 logs
