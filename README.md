@@ -1,10 +1,10 @@
 # hapicamperjs
 
-HapiCamper is a [hapi](https://github.com/hapijs/hapi) plugin that allows you to record and replay http requests. When recording is on, all requests are recorded in a sqlite database. When replay is turned on, any requets that match the signature of a pre-recorded request will have its content served from that database. If not match is found, the request will run normally (eg. go hit the backend for information). The two operations, record and replay are mutually exclusive. You may run either of them independently of the other. Request info is stored in one table (called "main") by default. You can optionally provide a map to map request routes to different tables. See section below for usage details.
+HapiCamper is a [hapi](https://github.com/hapijs/hapi) plugin that allows you to record and replay http requests. When recording is on, all requests are recorded in a sqlite database. When replay is turned on, any requets that match the signature of a pre-recorded request will have its content served from that database. If no match is found, the request will run normally (eg. go hit the backend for information). The two operations, record and replay are mutually exclusive. You may run either of them independently of the other. Request info is stored in one table (called "main") by default. You can optionally provide a map to map request routes to different tables. See section below for usage details.
 
 ## Usage
 ```
-var HapiCamper = require('./lib');
+var HapiCamper = require('hapicamperjs');
 
 server.register({
     register: HapiCamper,
