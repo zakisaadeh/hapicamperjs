@@ -1,3 +1,5 @@
+//DEV NOTE: add hapi dependency when wanting to run this for a quick demo
+
 var Hapi = require('hapi');
 var HapiCamper = require('./lib');
 
