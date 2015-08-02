@@ -1,7 +1,6 @@
 // module.exports = require('./lib');
 
 var Hapi = require('hapi');
-var Good = require('good');
 var HappyCamper = require('./lib');
 
 var server = new Hapi.Server();
@@ -39,19 +38,9 @@ var routesMap = [
 ];
 
 server.register({
-    register: Good,
+    register: HappyCamper,
     options: {
-        requestPayload: true,
-        responsePayload:true,
-        reporters: [{
-            reporter: HappyCamper,
-            events: {
-                response: '*',
-            },
-            config:{
-                routesMap: routesMap
-            }
-        }]
+        routesMap: routesMap
     }
 }, function (err) {
     if (err) {
