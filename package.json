@@ -15,5 +15,21 @@
   "bugs": {
     "url": "https://github.com/zakisaadeh/hapicamperjs/issues"
   },
-  "homepage": "https://github.com/zakisaadeh/hapicamperjs"
+  "homepage": "https://github.com/zakisaadeh/hapicamperjs",
+  "dependencies": {
+    "good": "^6.3.0",
+    "good-squeeze": "2.x.x",
+    "hapi": "^8.8.1",
+    "hoek": "2.x.x",
+    "json-stringify-safe": "5.0.x",
+    "moment": "2.8.x",
+    "through2": "0.6.x"
+  },
+  "peerDependencies": {
+    "good": ">= 6.x.x"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10.x"
+  }
 }

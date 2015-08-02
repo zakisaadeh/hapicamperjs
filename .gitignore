@@ -1,3 +1,6 @@
+# Custom
+.settings/*
+
 # Logs
 logs
 *.log
