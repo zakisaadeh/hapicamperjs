@@ -40,7 +40,9 @@ var routesMap = [
 server.register({
     register: HappyCamper,
     options: {
-        routesMap: routesMap
+        routesMap: routesMap,
+        record: true,
+        replay: true
     }
 }, function (err) {
     if (err) {
