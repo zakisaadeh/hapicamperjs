@@ -1,5 +1,5 @@
 var Hapi = require('hapi');
-var HappyCamper = require('./lib');
+var HapiCamper = require('./lib');
 
 var server = new Hapi.Server();
 server.connection({ port: 3000 });
@@ -36,7 +36,7 @@ var routesMap = [
 ];
 
 server.register({
-    register: HappyCamper,
+    register: HapiCamper,
     options: {
         routesMap: routesMap,
         record: true,
