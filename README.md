@@ -41,15 +41,15 @@ server.register({
 
 ### Route map to custom tables
 
-The plugin options object also accepts a routesMap. Routes map allows you to map the routes of requests into custom tables. This could be useful if you need to ogranize the data into smaller sets. For each mapping you may provide a regex for the pattern.
+The plugin options object also accepts a routesMap. routesMap allows you to map the routes of requests into custom tables. This could be useful if you need to ogranize the data into smaller sets. For each mapping you may provide a regex for the pattern.
 ```
 var routesMap = [
-    { pattern: "/hel+o", name: "hello-table"},
+    { pattern: "/hel+o", name: "hello"},
     { pattern: "/te.*" , name: "test"},
-    { pattern:".*" , name: "main"}
+    { pattern: ".*" , name: "main"}
 ];
 ```
 
-This will map all requests starting with '/hel+o' to be stored into table 'hello-table', and anything that starts with 'te' to be mapped to 'test' table. You may also provide a catch all mapping by using .* to map everything to 'main' table. For table names, you may not use any [reserved sqlite3 keywords] (https://www.sqlite.org/lang_keywords.html).
+This will map all requests matching regex '/hel+o' to table 'hello', and anything that starts with 'te' to be mapped to the 'test' table. You may also provide a catch-all mapping by using '.*' to map everything to 'main' table. For table names, you may not use any [reserved sqlite3 keywords] (https://www.sqlite.org/lang_keywords.html).
 
-**The order in which you specify the mappings matter. The first pattern to successfully match a route will be used. So any catch all mappings need to be at the very end.**
+**The order in which you specify the mappings matter. The first pattern to successfully match a route will be used. So any catch-all mappings need to be at the very end.**
