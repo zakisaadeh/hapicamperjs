@@ -1,12 +1,14 @@
 {
   "name": "hapicamperjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Hapi plugin that records and replays hapi http requests. It stores the recorded payloads in a sqlite3 database.",
   "main": "index.js",
   "keywords": [
-    "log",
     "replay",
     "record",
+    "http",
+    "request",
+    "log",
     "hapi",
     "plugin"
   ],  
@@ -24,18 +26,11 @@
   },
   "homepage": "https://github.com/zakisaadeh/hapicamperjs",
   "dependencies": {
-    "good": "^6.3.0",
-    "good-squeeze": "2.x.x",
-    "hapi": "^8.8.1",
     "hoek": "2.x.x",
-    "json-stringify-safe": "5.0.x",
-    "moment": "2.8.x",
     "sqlite-wrapper": "^0.2.1",
-    "through2": "0.6.x",
     "underscore": "^1.8.3"
   },
   "peerDependencies": {
-    "good": ">= 6.x.x"
   },
   "devDependencies": {},
   "engines": {
