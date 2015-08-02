@@ -1,8 +1,15 @@
 {
   "name": "hapicamperjs",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A Hapi plugin that records and replays hapi http requests. It stores the recorded payloads in a sqlite3 database.",
   "main": "index.js",
+  "keywords": [
+    "log",
+    "replay",
+    "record",
+    "hapi",
+    "plugin"
+  ],  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/zakisaadeh/hapicamperjs.git"
   },
-  "author": "Zaki Saadeh",
+  "author": "Zaki Saadeh <zaki.saadeh@gmail.com>",
   "license": "GPL-3",
   "bugs": {
     "url": "https://github.com/zakisaadeh/hapicamperjs/issues"
