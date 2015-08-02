@@ -25,7 +25,9 @@ server.route([
     method: 'GET',
     path: '/test',
     handler: function (request, reply) {
-            reply('this goes to table test!');
+        var obj = {'firstName' : 'Zaki',
+            'lastName': 'Saadeh'};
+            reply(obj);
         }
     }
 ]);
@@ -40,7 +42,7 @@ var routesMap = [
 server.register({
     register: HapiCamper,
     options: {
-        routesMap: routesMap,
+        routesMap: null,
         record: true,
         replay: true
     }
