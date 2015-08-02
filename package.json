@@ -1,6 +1,6 @@
 {
   "name": "hapicamperjs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Hapi plugin that records and replays hapi http requests. It stores the recorded requests in a sqlite3 database.",
   "main": "lib/index.js",
   "keywords": [
